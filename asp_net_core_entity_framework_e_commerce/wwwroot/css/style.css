@@ -1,0 +1,41 @@
+﻿*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info__table > table {
+    background-color: #9D00FF;
+    color: whitesmoke;
+    font-family: Calibri;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding:5px 10px;
+}
+
+#info__table > tr, td:not(:last-child), th:not(:last-child) {
+    padding: 5px 10px;
+    border-right: 1px solid white;
+}
+
+#info__table tr:nth-child(odd) td {
+    background-color: #7800C3;
+    border-radius:10px;
+    padding:5px 10px;
+}

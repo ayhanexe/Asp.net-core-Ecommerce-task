@@ -1,0 +1,102 @@
+﻿@using asp_net_core_entity_framework_e_commerce.viewModels
+@using asp_net_core_entity_framework_e_commerce.Models
+@model HomeIndexViewModel
+
+<div id="info__table">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Brand Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var brand in Model.brands)
+            {
+                <tr>
+                    <td>@brand.id</td>
+                    <td>@brand.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Product Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.products)
+            {
+                <tr>
+                    <td>@product.id</td>
+                    <td>@product.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.users)
+            {
+                <tr>
+                    <td>@user.id</td>
+                    <td>@user.name</td>
+                    <td>@user.surname</td>
+                    <td>@user.email</td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Roles</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var role in Model.roles)
+            {
+                <tr>
+                    <td>@role.id</td>
+                    <td>@role.role</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Category Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model.categories)
+            {
+                <tr>
+                    <td>@category.id</td>
+                    <td>@category.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

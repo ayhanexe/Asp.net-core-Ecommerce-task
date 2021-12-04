@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ef8b52b8-b3d4-48d6-bbe4-bed47cd98534": {
+      "ProjectGuid": "ef8b52b8-b3d4-48d6-bbe4-bed47cd98534",
+      "DisplayName": "asp_net_core_entity_framework_e_commerce",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
